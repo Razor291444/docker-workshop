@@ -61,6 +61,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - kestra_tmp:/tmp/kestra-wd
     environment:
+      SECRET_KEY: bXlQcml2YXRlQ29kZQ==
       KESTRA_CONFIGURATION: |
         datasources:
           postgres:
